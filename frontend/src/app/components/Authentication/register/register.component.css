@@ -1,0 +1,13 @@
+.container{
+    margin-top: 80px;
+    padding-top: 50px;
+}
+.form-elements{
+    width: 500px;
+}
+.registerForm{
+    padding: 20px;
+}
+mat-card{
+    margin-top: 20px;
+}

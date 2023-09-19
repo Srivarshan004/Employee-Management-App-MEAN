@@ -1,0 +1,27 @@
+<main>
+  <nav (scroll)="onScroll()" [ngClass]="navbarfixed? 'fixed' : 'nofixed'">
+    <mat-toolbar *ngIf="showMenu" color="primary">
+    <mat-icon>supervisor_account</mat-icon>
+    <span>Employee Management App | Angular</span>
+    <div>
+      <button class="menu-btn" mat-raised-button routerLink="/dashboard">
+        <a>Home</a>
+      </button> 
+      &nbsp;&nbsp;
+      <button class="menu-btn" mat-raised-button  routerLink="/user">
+        <a>User</a>
+      </button> 
+    </div>
+    <span class="example-spacer"></span>
+    <mat-icon>account_circle</mat-icon>
+    <h6 style="text-transform: capitalize;">{{userName}}</h6>
+    &nbsp;&nbsp;&nbsp;
+    <button mat-raised-button color="warn" routerLink="/login">Logout</button>
+  </mat-toolbar>
+
+
+  <router-outlet></router-outlet>
+  </nav>
+  <!-- <app-login (sendDataToParent)="receiveDataFromChild($event)"></app-login> -->
+
+</main>

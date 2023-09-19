@@ -1,0 +1,22 @@
+.empDetail{
+    padding: 20px 50px;
+}
+#id{
+    color: orangered;
+}
+div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 700px;
+}
+mat-label{
+    font-size: x-large;
+    margin-right: 15px;
+}
+h3{
+    margin-top: 18px;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: bold;
+}

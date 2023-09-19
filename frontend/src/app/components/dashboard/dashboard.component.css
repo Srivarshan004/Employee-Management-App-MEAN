@@ -1,0 +1,38 @@
+table{
+    width: 80%;
+}
+mat-paginator {
+    width: 100%;
+    border-top: 1px solid rgb(201, 200, 200);
+}
+.allEmployees{
+    padding: 20px;
+}
+.numOfEmp{
+    width: 95%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+form{
+    display: flex;
+}
+form mat-form-field input{
+    border: none;
+}
+form button{
+    height: 56px;
+    border: none;
+    border-radius: 0;
+}
+.container{
+    flex-direction: column;
+}
+

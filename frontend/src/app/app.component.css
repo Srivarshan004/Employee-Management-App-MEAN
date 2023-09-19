@@ -1,0 +1,41 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+body{
+    width: 100vw;
+}
+main{
+    position: relative;
+}
+mat-toolbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+mat-icon{
+    margin: 0 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+}
+.menu-btn a{
+    text-decoration: none;
+    color: black;
+}
+div{
+    margin-left: 200px;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0;
+}
+.nofixed{
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+}

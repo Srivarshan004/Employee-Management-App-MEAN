@@ -1,0 +1,125 @@
+<div class="container">
+    <mat-card>
+      <form class="updateForm" [formGroup]="employeeDetail"
+      (ngSubmit)="updateEmployee()">
+        <div>
+          <h2 style="text-align: center">
+            <b>Update Employee Here! </b>
+          </h2>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Employee Name</mat-label>
+            <input matInput formControlName="name" />
+            <mat-error>Employee Name is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Employee Email</mat-label>
+            <input matInput type="email" formControlName="email"/>
+            <mat-error>Employee Email is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Employee Age</mat-label>
+            <input matInput formControlName="age" />
+            <mat-error>Age is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput type="date" formControlName="dob" />
+            <mat-error>DOB is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Phone No.</mat-label>
+            <input matInput  formControlName="phoneNumber"/>
+            <mat-error>Phone Numberis Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <mat-radio-group formControlName="gender" aria-label="Select an option">
+            <mat-label>Gender</mat-label>
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Job</mat-label>
+            <input matInput  formControlName="jobTitle"/>
+            <mat-error>Job Title Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field style="width: 100%;">
+            <mat-label>Department</mat-label>
+            <mat-select  formControlName="department">
+              <mat-option value="design">Design</mat-option>
+              <mat-option value="development">Devlopment</mat-option>
+              <mat-option value="prodution">Production</mat-option>
+              <mat-option value="service">Service</mat-option>
+            </mat-select>
+        </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>City</mat-label>
+            <input matInput  formControlName="city"/>
+            <mat-error>City is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>State</mat-label>
+            <input matInput  formControlName="state"/>
+            <mat-error>State is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Hiring Date</mat-label>
+            <input matInput type="date" formControlName="hiringDate" />
+            <mat-error>Hiring Date is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Bank Name</mat-label>
+            <input matInput formControlName="bank" />
+            <mat-error>Bank Name is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Bank Account Number</mat-label>
+            <input matInput formControlName="bankAccount" />
+            <mat-error>Bank Account Number is Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline" class="form-elements">
+              <mat-label>Salary</mat-label>
+              <input matInput  formControlName="salary"/>
+              <mat-error>Salary is Required</mat-error>
+            </mat-form-field>
+          </div>
+        <div>
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit"
+            style="float: right"
+            [disabled]="!enableSubmitBtn()">
+            Update Employee
+          </button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+  

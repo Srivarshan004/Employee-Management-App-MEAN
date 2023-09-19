@@ -1,0 +1,19 @@
+.form-elements{
+    width: 500px;
+}
+.addForm{
+    padding: 20px;
+}
+mat-card{
+    margin-top: 20px;
+}
+mat-radio-group {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: gray;
+}
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+}
+  
