@@ -9,7 +9,7 @@ const cors = require('cors')
 dotenv.config({
     path:path.join(__dirname,'config','config.env')
 });
-app.use(cors({origin: 'http://localhost:4200'}))
+app.use(cors({origin: 'https://employeement-management-application.onrender.com'}))
 
 const employee = require('./routes/employee');
 const auth = require('./routes/auth');
